@@ -1,6 +1,8 @@
 #include <iostream>
 #include <json.hpp>
 #include <fstream>
+#include <cstdlib>
+
 #include "config.h"
 using json = nlohmann::json;
 
@@ -17,7 +19,8 @@ int main() {
         config();
     }
     if (input == "2") {
-        return 0;
+
+    system("python main.py");
     }
     else {
         return 0;

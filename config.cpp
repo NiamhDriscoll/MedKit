@@ -31,13 +31,13 @@ void setMedicationTime() {
     std::getline(std::cin, sunInputTime);
     std::cout << "Medication set successfully!" << std::endl;
     json medication ={
-        {"monTime", monInputTime},
-        {"tueTime", tueInputTime},
-        {"wedTime", wedInputTime},
-        {"thuTime", thuInputTime},
-        {"friTime", friInputTime},
-        {"satTime", satInputTime},
-        {"sunTime", sunInputTime}
+        {"MonTime", monInputTime},
+        {"TueTime", tueInputTime},
+        {"WedTime", wedInputTime},
+        {"ThuTime", thuInputTime},
+        {"FriTime", friInputTime},
+        {"SatTime", satInputTime},
+        {"SunTime", sunInputTime}
     };
     saveToFile(medication, "time.json");
 }

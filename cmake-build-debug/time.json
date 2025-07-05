@@ -1,9 +1,9 @@
 {
-  "friTime": "1",
-  "monTime": "",
-  "satTime": "1",
-  "sunTime": "1",
-  "thuTime": "1",
-  "tueTime": "1",
-  "wedTime": "1"
+  "FriTime": "",
+  "MonTime": "",
+  "SatTime": "",
+  "SunTime": "",
+  "ThuTime": "",
+  "TueTime": "",
+  "WedTime": ""
 }
