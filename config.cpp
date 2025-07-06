@@ -65,13 +65,13 @@ void setMedication() {
     std::getline(std::cin, sunInput);
     std::cout << "Medication set successfully!" << std::endl;
     json medication ={
-        {"mon", monInput},
-        {"tue", tueInput},
-        {"wed", wedInput},
-        {"thu", thuInput},
-        {"fri", friInput},
-        {"sat", satInput},
-        {"sun", sunInput}
+        {"Mon", monInput},
+        {"Tue", tueInput},
+        {"Wed", wedInput},
+        {"Thu", thuInput},
+        {"Fri", friInput},
+        {"Sat", satInput},
+        {"Sun", sunInput}
     };
 
     saveToFile(medication, "medication.json");
