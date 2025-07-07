@@ -21,6 +21,9 @@ int main() {
     if (input == "2") {
 
     system("python main.py");
+    while (true) {
+
+    }
     }
     else {
         return 0;

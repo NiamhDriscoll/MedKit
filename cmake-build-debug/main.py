@@ -1,14 +1,12 @@
 import json
 import time
 from datetime import datetime
-from flask import Flask, render_template
+
 time.time()
-app = Flask(__name__)
 
 
-@app.route("/")
-def home():
-    return render_template("index.html")
+
+
 
 time.sleep(1)
 while True:
@@ -22,19 +20,17 @@ while True:
     time_key = f"{day}Time"
     med_time = data[time_key]
     if time_only == med_time:
-        print(f"Time to take medication: ")
-        print(meds[day])
+        wrote = False
+        if wrote == False:
+         with open('bool.txt', 'w') as bool_file:
+            bool_file.write("True")
+            wrote = True
+            time.sleep(60)
+            wrote = False
+        #Make the thing that reads from bool.txt in main.cpp
 
 
 
-        if __name__ == '__main__':
-            print("Flask app started")
-            try:
-                app.run(debug=True, port=8000)
-                print("Flask app ended")
-            finally:
-                print("Flask app closed")
-                time.sleep(60)
 
 
 
