@@ -7,6 +7,8 @@ void saveToFile(const json& j, const std::string& filename) {
     std::ofstream file(filename);
     file << j.dump(2);
 }
+
+
 void setMedicationTime() {
     std::string monInputTime;
     std::string tueInputTime;

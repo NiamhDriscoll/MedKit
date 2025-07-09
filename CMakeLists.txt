@@ -8,3 +8,4 @@ add_executable(untitled main.cpp
         config.h)
 
 include_directories(include)
+target_link_libraries(untitled winmm)

@@ -6,16 +6,17 @@
 #include <string>
 #include <chrono>
 #include <thread>
-#include <ctime>
-#include <iomanip>
-#include <sstream>
-#include <vector>
+
 #include <algorithm>
 
 #include "config.h"
 using json = nlohmann::json;
 
+void reminderSound() {
+    PlaySound(TEXT("SystemExclamation"), nullptr, SND_ALIAS | SND_ASYNC);
 
+
+}
 
 
 int main() {
@@ -29,8 +30,10 @@ int main() {
     }
     if (input == "2") {
 
-    STARTUPINFO si;
+    STARTUPINFO si = {sizeof(si)};
         PROCESS_INFORMATION pi;
+        ZeroMemory(&si, sizeof(si));
+        ZeroMemory(&pi, sizeof(pi));
         const char* cmd = "python main.py";
         CreateProcess(nullptr, static_cast<LPSTR>(const_cast<char*>(cmd)), nullptr, nullptr, FALSE, 0, nullptr, nullptr, &si, &pi);
     std::cout << "Medication reminder started!" << std::endl;
@@ -43,12 +46,13 @@ int main() {
         std::string data;
         std::getline(file, data);
         file.close();
-        data = "True";
+
         if (data == "True") {
             std::ifstream med("med.txt");
             std::string medData;
             std::getline(med, medData);
             med.close();
+            reminderSound();
             MessageBoxW(nullptr, (L"Take your medication: " + std::wstring(medData.begin(), medData.end())).c_str(), L"Reminder", MB_OK);
             std::ofstream boolFile("bool.txt");
             boolFile << "False";

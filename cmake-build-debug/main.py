@@ -8,7 +8,7 @@ time.time()
 
 
 
-time.sleep(1)
+print("hello")
 while True:
     with open('time.json', 'r') as medication_time:
         data = json.load(medication_time)
