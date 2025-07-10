@@ -3,9 +3,31 @@
 #include <json.hpp>
 
 using json = nlohmann::json;
+void saveToFileUpdate(const json& j, const std::string& filename) {
+    json oldFile;
+    std::ifstream inFile(filename);
+    if (inFile.is_open()) {
+        try {
+            inFile >> oldFile;
+        }
+        catch (std::exception& e) {
+            std::cout << "Error reading file: " << e.what() << std::endl;
+            return;
+        }
+        inFile.close();
+    }
+    else {
+        std::cout << "Error opening file" << std::endl;
+        return;
+    }
+    oldFile.update(j);
+    std::ofstream outFile(filename);
+
+    outFile << oldFile.dump(2);
+}
 void saveToFile(const json& j, const std::string& filename) {
-    std::ofstream file(filename);
-    file << j.dump(2);
+    std::ofstream outFile(filename);
+    outFile << j.dump(2);
 }
 
 

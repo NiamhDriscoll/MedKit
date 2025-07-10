@@ -30,7 +30,7 @@ while True:
             time.sleep(60)
 
 
-        #Make the thing that reads from bool.txt in main.cpp
+
 
 
 
