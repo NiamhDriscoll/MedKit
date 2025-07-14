@@ -4,5 +4,5 @@
 
 #ifndef TAKE_H
 #define TAKE_H
-
+int SymptomResponseManager();
 #endif //TAKE_H

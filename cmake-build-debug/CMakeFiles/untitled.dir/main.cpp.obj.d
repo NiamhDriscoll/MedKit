@@ -528,4 +528,5 @@ CMakeFiles/untitled.dir/main.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2025.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atomic_timed_wait.h \
  C:/Program\ Files/JetBrains/CLion\ 2025.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/this_thread_sleep.h \
  C:/Program\ Files/JetBrains/CLion\ 2025.1.3/bin/mingw/x86_64-w64-mingw32/include/semaphore.h \
- C:\Users\niamh_8ref0it\PycharmProjects\MedKit\config.h
+ C:\Users\niamh_8ref0it\PycharmProjects\MedKit\config.h \
+ C:\Users\niamh_8ref0it\PycharmProjects\MedKit\symptom.h

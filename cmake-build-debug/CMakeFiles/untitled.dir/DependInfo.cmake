@@ -10,7 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/niamh_8ref0it/PycharmProjects/MedKit/config.cpp" "CMakeFiles/untitled.dir/config.cpp.obj" "gcc" "CMakeFiles/untitled.dir/config.cpp.obj.d"
   "C:/Users/niamh_8ref0it/PycharmProjects/MedKit/main.cpp" "CMakeFiles/untitled.dir/main.cpp.obj" "gcc" "CMakeFiles/untitled.dir/main.cpp.obj.d"
-  "C:/Users/niamh_8ref0it/PycharmProjects/MedKit/cmake-build-debug/take.cpp" "CMakeFiles/untitled.dir/take.cpp.obj" "gcc" "CMakeFiles/untitled.dir/take.cpp.obj.d"
+  "C:/Users/niamh_8ref0it/PycharmProjects/MedKit/symptom.cpp" "CMakeFiles/untitled.dir/symptom.cpp.obj" "gcc" "CMakeFiles/untitled.dir/symptom.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

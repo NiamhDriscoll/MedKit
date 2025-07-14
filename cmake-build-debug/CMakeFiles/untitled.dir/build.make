@@ -101,33 +101,33 @@ CMakeFiles/untitled.dir/config.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/config.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\niamh_8ref0it\PycharmProjects\MedKit\config.cpp -o CMakeFiles\untitled.dir\config.cpp.s
 
-CMakeFiles/untitled.dir/take.cpp.obj: CMakeFiles/untitled.dir/flags.make
-CMakeFiles/untitled.dir/take.cpp.obj: CMakeFiles/untitled.dir/includes_CXX.rsp
-CMakeFiles/untitled.dir/take.cpp.obj: take.cpp
-CMakeFiles/untitled.dir/take.cpp.obj: CMakeFiles/untitled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\niamh_8ref0it\PycharmProjects\MedKit\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled.dir/take.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled.dir/take.cpp.obj -MF CMakeFiles\untitled.dir\take.cpp.obj.d -o CMakeFiles\untitled.dir\take.cpp.obj -c C:\Users\niamh_8ref0it\PycharmProjects\MedKit\cmake-build-debug\take.cpp
+CMakeFiles/untitled.dir/symptom.cpp.obj: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/symptom.cpp.obj: CMakeFiles/untitled.dir/includes_CXX.rsp
+CMakeFiles/untitled.dir/symptom.cpp.obj: C:/Users/niamh_8ref0it/PycharmProjects/MedKit/symptom.cpp
+CMakeFiles/untitled.dir/symptom.cpp.obj: CMakeFiles/untitled.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\niamh_8ref0it\PycharmProjects\MedKit\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled.dir/symptom.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled.dir/symptom.cpp.obj -MF CMakeFiles\untitled.dir\symptom.cpp.obj.d -o CMakeFiles\untitled.dir\symptom.cpp.obj -c C:\Users\niamh_8ref0it\PycharmProjects\MedKit\symptom.cpp
 
-CMakeFiles/untitled.dir/take.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/untitled.dir/take.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\niamh_8ref0it\PycharmProjects\MedKit\cmake-build-debug\take.cpp > CMakeFiles\untitled.dir\take.cpp.i
+CMakeFiles/untitled.dir/symptom.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/untitled.dir/symptom.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\niamh_8ref0it\PycharmProjects\MedKit\symptom.cpp > CMakeFiles\untitled.dir\symptom.cpp.i
 
-CMakeFiles/untitled.dir/take.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/take.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\niamh_8ref0it\PycharmProjects\MedKit\cmake-build-debug\take.cpp -o CMakeFiles\untitled.dir\take.cpp.s
+CMakeFiles/untitled.dir/symptom.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/symptom.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\niamh_8ref0it\PycharmProjects\MedKit\symptom.cpp -o CMakeFiles\untitled.dir\symptom.cpp.s
 
 # Object files for target untitled
 untitled_OBJECTS = \
 "CMakeFiles/untitled.dir/main.cpp.obj" \
 "CMakeFiles/untitled.dir/config.cpp.obj" \
-"CMakeFiles/untitled.dir/take.cpp.obj"
+"CMakeFiles/untitled.dir/symptom.cpp.obj"
 
 # External object files for target untitled
 untitled_EXTERNAL_OBJECTS =
 
 untitled.exe: CMakeFiles/untitled.dir/main.cpp.obj
 untitled.exe: CMakeFiles/untitled.dir/config.cpp.obj
-untitled.exe: CMakeFiles/untitled.dir/take.cpp.obj
+untitled.exe: CMakeFiles/untitled.dir/symptom.cpp.obj
 untitled.exe: CMakeFiles/untitled.dir/build.make
 untitled.exe: CMakeFiles/untitled.dir/linkLibs.rsp
 untitled.exe: CMakeFiles/untitled.dir/objects1.rsp

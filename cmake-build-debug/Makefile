@@ -183,29 +183,29 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-take.obj: take.cpp.obj
-.PHONY : take.obj
+symptom.obj: symptom.cpp.obj
+.PHONY : symptom.obj
 
 # target to build an object file
-take.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/take.cpp.obj
-.PHONY : take.cpp.obj
+symptom.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/symptom.cpp.obj
+.PHONY : symptom.cpp.obj
 
-take.i: take.cpp.i
-.PHONY : take.i
+symptom.i: symptom.cpp.i
+.PHONY : symptom.i
 
 # target to preprocess a source file
-take.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/take.cpp.i
-.PHONY : take.cpp.i
+symptom.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/symptom.cpp.i
+.PHONY : symptom.cpp.i
 
-take.s: take.cpp.s
-.PHONY : take.s
+symptom.s: symptom.cpp.s
+.PHONY : symptom.s
 
 # target to generate assembly for a file
-take.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/take.cpp.s
-.PHONY : take.cpp.s
+symptom.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/symptom.cpp.s
+.PHONY : symptom.cpp.s
 
 # Help Target
 help:
@@ -223,9 +223,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... take.obj
-	@echo ... take.i
-	@echo ... take.s
+	@echo ... symptom.obj
+	@echo ... symptom.i
+	@echo ... symptom.s
 .PHONY : help
 
 

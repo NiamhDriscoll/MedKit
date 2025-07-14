@@ -13,6 +13,5 @@ void saveToFile(const json& j, const std::string& filename);
 void setMedicationTime();
 void setMedication();
 int config();
-void saveToFileUpdate(const json& j, const std::string& filename);
 
 #endif //UNTITLED_CONFIG_H

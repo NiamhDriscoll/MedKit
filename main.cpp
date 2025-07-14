@@ -10,6 +10,7 @@
 #include <algorithm>
 
 #include "config.h"
+#include "symptom.h"
 using json = nlohmann::json;
 
 void reminderSound() {
@@ -20,6 +21,7 @@ void reminderSound() {
 
 
 int main() {
+    SymptomResponseManager();
     std::cout << "MedKit 0.1 built by Niamh Driscoll" << std::endl;
     std::cout << "Welcome to MedKit! Would you like to set new medications or run as usual?" << std::endl;
     std::cout << "1. Configure program 2. Run as usual: ";
