@@ -37,6 +37,22 @@ void saveToFileUpdate(const json& j, const std::string& filename) {
     outFile << oldFile.dump(2);
     outFile.close();
 }
+void read_file(json& j ,const std::string& filename) {
+
+    std::ifstream inFile(filename);
+    if (inFile.is_open()) {
+        try {
+            inFile >> j;
+            for (const auto& [key, value] : j.items()) {
+                std::cout << key << " : " << value.get<std::string>() << std::endl;
+            }
+        }
+        catch (std::exception& e) {
+            std::cout << "Error reading file: " << e.what() << std::endl;
+            return;
+        }
+    }
+}
 void getSymptom() {
     std::string symptomAdd;
     std::string treatmentAdd;
@@ -59,7 +75,7 @@ void helper() {
 int SymptomResponseManager() {
     std::cout << "Symptom Response Manager" << std::endl;
     std::cout << "1. Add a new symptom to the Symptom Response Manager" << std::endl;
-    std::cout << "2. Remove a symptom from the Symptom Response Manager" << std::endl;
+    std::cout << "2. Remove symptoms from the Symptom Response Manager" << std::endl;
     std::cout << "3. View the Symptom Response Manager" << std::endl;
     std::cout << "4. Exit" << std::endl;
     std::cout << "Enter your choice: ";
@@ -68,12 +84,28 @@ int SymptomResponseManager() {
     if (input == "1") {
 getSymptom();}
     if (input == "2") {
+    std ::string symptomRemove;
+    std::string treatmentRemove;
+    std::cout << "Enter the symptom you want to remove from the Symptom Response Manager: ";
+    std::getline(std::cin, symptomRemove);
+    json symptoms ={
+        {symptomRemove, ""},
 
+
+    };
+    saveToFileUpdate(symptoms, "symptoms.json");
 }
     if (input == "3") {
+        json j;
+        read_file(j, "symptoms.json");
 
+    if (input == "4") {
+        return 0;
+    }
 }
-    return 0;
+    else {
+        return 1;
+    }
 
 
 }

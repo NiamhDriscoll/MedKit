@@ -4,10 +4,6 @@ from datetime import datetime
 
 time.time()
 
-
-
-
-
 print("hello")
 while True:
     with open('time.json', 'r') as medication_time:

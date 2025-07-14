@@ -21,10 +21,14 @@ void reminderSound() {
 
 
 int main() {
-    SymptomResponseManager();
+
     std::cout << "MedKit 0.1 built by Niamh Driscoll" << std::endl;
     std::cout << "Welcome to MedKit! Would you like to set new medications or run as usual?" << std::endl;
-    std::cout << "1. Configure program 2. Run as usual: ";
+    std::cout << "1. Configure program" << std::endl;
+    std::cout << "2. Run as usual" << std::endl;
+    std::cout << "3. Open Symptom Response Manager" << std::endl;
+    std::cout << "4. Exit" << std::endl;
+    std::cout << "Enter your choice: ";
     std::string input;
     std::getline(std::cin, input);
     if (input == "1") {
@@ -64,9 +68,23 @@ int main() {
         }
     }
     }
-    else {
+    if (input == "3") {
+        SymptomResponseManager();
+    }
+    if (input == "4") {
+
         return 0;
+    }
+    else {
+        return 1;
 
     }
 
 }
+
+//int main() {
+//    while (true) {
+//        main_function();
+//    }
+
+//}
